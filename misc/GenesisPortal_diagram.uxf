@@ -4,29 +4,26 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>460</y>
+      <x>220</x>
+      <y>340</y>
       <w>210</w>
-      <h>130</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>_object: GradeBook_
 --
-private Assesments[]
-private Teacher
-private Average
-private TeacherEmail
+private Classes[]
 --
+GradeBook(response)
 GetTeacher()
 GetAssesmentTypes()
---
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>150</x>
-      <y>120</y>
+      <x>210</x>
+      <y>0</y>
       <w>190</w>
       <h>250</h>
     </coordinates>
@@ -52,8 +49,8 @@ values into the parser.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>230</x>
-      <y>360</y>
+      <x>290</x>
+      <y>240</y>
       <w>50</w>
       <h>120</h>
     </coordinates>
@@ -63,8 +60,8 @@ values into the parser.</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>290</x>
-      <y>710</y>
+      <x>360</x>
+      <y>600</y>
       <w>210</w>
       <h>90</h>
     </coordinates>
@@ -81,8 +78,8 @@ private TeacherEmail
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>360</y>
+      <x>440</x>
+      <y>240</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
@@ -96,31 +93,31 @@ getAverage
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
-      <y>580</y>
-      <w>150</w>
-      <h>150</h>
+      <x>310</x>
+      <y>480</y>
+      <w>160</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>130.0;130.0;10.0;10.0</additional_attributes>
+    <additional_attributes>140.0;120.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>440</x>
-      <y>420</y>
+      <x>510</x>
+      <y>300</y>
       <w>120</w>
-      <h>310</h>
+      <h>320</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;interface&gt;&gt;</panel_attributes>
-    <additional_attributes>60.0;10.0;10.0;290.0</additional_attributes>
+    <additional_attributes>50.0;10.0;10.0;300.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
-      <y>470</y>
+      <x>620</x>
+      <y>350</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
@@ -134,13 +131,98 @@ getEmail
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>520</y>
-      <w>200</w>
-      <h>210</h>
+      <x>530</x>
+      <y>400</y>
+      <w>190</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;interface&gt;&gt;</panel_attributes>
-    <additional_attributes>180.0;10.0;10.0;190.0</additional_attributes>
+    <additional_attributes>170.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>510</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>_object: GradeBookParser_
+--
+getClasses()
+getTeachers()
+getTeacherEmails()
+getAverages()
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>110</x>
+      <y>240</y>
+      <w>150</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;270.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>750</y>
+      <w>230</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>_object: CourseInformationParser_
+--
+getAssesments()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>590</y>
+      <w>70</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>740</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>_object: Assesment_
+--
+get;
+private Name
+private Date
+private Grade
+private Destription
+private Type
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>680</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;20.0;10.0</additional_attributes>
   </element>
 </diagram>
