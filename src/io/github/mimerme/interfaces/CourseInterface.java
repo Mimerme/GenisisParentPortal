@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public interface CourseInterface {
 	String CourseName = "";
-	ArrayList<AssessmentInterface> assessments = new ArrayList<AssessmentInterface>();
+	AssessmentInterface[] assessments = new AssessmentInterface[1];
 	String average = "";
 	
-	default public ArrayList<AssessmentInterface> getAssessments() {
+	default public AssessmentInterface[] getAssessments() {
 		return assessments;
 	}
 	

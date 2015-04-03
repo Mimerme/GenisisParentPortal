@@ -8,6 +8,8 @@ public class Assessment implements AssessmentInterface{
 	String grade;
 	
 	public Assessment(String name, String date, String grade){
-		
+		this.name = name;
+		this.date = date;
+		this.grade = grade;
 	}
 }

@@ -2,13 +2,15 @@ package io.github.mimerme.parentportal;
 
 import java.io.IOException;
 
-import org.jsoup.Connection;
+import org.jsoup.Connection.Method;
+import org.jsoup.Connection.Response;
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 public class Portal {
 	private final String LOGIN_URL = 
 			"https://parents.edison.k12.nj.us/genesis/j_security_check";
-	private Connection.Response response;
+	private Response response;
 	
 	private String username;
 	private String password;
@@ -22,10 +24,26 @@ public class Portal {
 	
 	public String connect(){
 		try{
+			//first connection to get cookies needed
+			response = Jsoup.connect(LOGIN_URL).execute();
+			String sessionId = response.cookie("JSESSIONID");
+			System.out.println(sessionId);
+			//Notice, genisis requires cookies to login
+			//Specifically the JSESSIONID
 		response = Jsoup.connect(LOGIN_URL)
-			.data("j_username", username)
+			.userAgent("Mozila")
 			.data("j_password", password)
+			.data("j_username", username)
+			.method(Method.POST)
+			.cookie("JSESSIONID", sessionId)
 			.execute();
+
+		
+		System.out.println(response.body());
+		
+		if(response.body().contains("Invalid user name or password"))
+			return "Invalid username or password";
+			
 			return null;
 		}
 		catch(IOException e){

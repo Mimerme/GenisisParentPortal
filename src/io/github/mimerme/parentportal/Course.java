@@ -8,11 +8,11 @@ import io.github.mimerme.interfaces.CourseInterface;
 public class Course implements CourseInterface{
 	String courseName;
 	String average;
+	AssessmentInterface[] asessments;
 	
-	ArrayList<AssessmentInterface> assessments = new ArrayList<AssessmentInterface>();
-	
-	public Course(String name, String average){
+	public Course(String name, String average, AssessmentInterface[] assesments){
 		this.courseName = name;
 		this.average = average;
+		this.asessments = asessments;
 	}
 }

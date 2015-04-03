@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
+      <x>340</x>
       <y>340</y>
       <w>210</w>
       <h>150</h>
@@ -22,7 +22,7 @@ GetAssesmentTypes()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>210</x>
+      <x>330</x>
       <y>0</y>
       <w>190</w>
       <h>250</h>
@@ -49,7 +49,7 @@ values into the parser.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>290</x>
+      <x>410</x>
       <y>240</y>
       <w>50</w>
       <h>120</h>
@@ -60,7 +60,7 @@ values into the parser.</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
+      <x>480</x>
       <y>600</y>
       <w>210</w>
       <h>90</h>
@@ -78,7 +78,7 @@ private TeacherEmail
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>440</x>
+      <x>560</x>
       <y>240</y>
       <w>210</w>
       <h>70</h>
@@ -93,7 +93,7 @@ getAverage
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>310</x>
+      <x>430</x>
       <y>480</y>
       <w>160</w>
       <h>140</h>
@@ -104,7 +104,7 @@ getAverage
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>510</x>
+      <x>630</x>
       <y>300</y>
       <w>120</w>
       <h>320</h>
@@ -116,7 +116,7 @@ getAverage
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>620</x>
+      <x>740</x>
       <y>350</y>
       <w>210</w>
       <h>70</h>
@@ -131,7 +131,7 @@ getEmail
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>530</x>
+      <x>650</x>
       <y>400</y>
       <w>190</w>
       <h>220</h>
@@ -143,7 +143,7 @@ getEmail
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>120</x>
       <y>510</y>
       <w>210</w>
       <h>90</h>
@@ -161,7 +161,7 @@ getAverages()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>110</x>
+      <x>230</x>
       <y>240</y>
       <w>150</w>
       <h>290</h>
@@ -172,7 +172,7 @@ getAverages()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
+      <x>160</x>
       <y>750</y>
       <w>230</w>
       <h>50</h>
@@ -186,7 +186,7 @@ getAssesments()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>90</x>
+      <x>210</x>
       <y>590</y>
       <w>70</w>
       <h>180</h>
@@ -197,7 +197,7 @@ getAssesments()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>340</x>
+      <x>460</x>
       <y>740</y>
       <w>210</w>
       <h>90</h>
@@ -217,7 +217,7 @@ private Type
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>430</x>
+      <x>550</x>
       <y>680</y>
       <w>40</w>
       <h>80</h>
