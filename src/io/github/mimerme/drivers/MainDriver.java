@@ -23,6 +23,6 @@ public class MainDriver {
 		else{
 			System.out.println("Login was successful");
 		}
-		//System.out.println(as.getName() + " : " + as.getDate() + " : " + as.getGrade() + " : ");
+		//System.out.println();
 	}
 }

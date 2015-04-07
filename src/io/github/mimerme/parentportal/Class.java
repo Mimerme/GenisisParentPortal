@@ -16,5 +16,10 @@ public class Class {
 		return teacher;
 	}
 	
+	public String toString(){
+		return course.courseName +  " : " + course.average + " : " + course.asessments
+				+ " : " + teacher.name + " : " + teacher.email;
+	}
+	
 	
 }
